@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+#container h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 4;
+}
+
+#container input {
+    font: italic 500 1.2rem '';
+    letter-spacing: 0.05rem;
+    width: 90vw;
+    height: 40px;
+    padding: 0 0.5rem;
+    border: 0;
+    border-radius: 1rem 0.5rem;
+    text-transform: capitalize;
+}
+
+#container input::placeholder {
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+@media screen and (min-width: 500px) {
+    #container h3 {
+        font-size: 2.3rem;
+    }
+
+    #container input {
+        width: 400px;
+        font-size: 1.5rem;
+    }
+}
